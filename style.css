@@ -3,22 +3,360 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
+/* telephone display max 600px*/
+@media only screen and (max-width: 600px){
+    
+    section {
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header {
+        background-image: url('./images/bently.jpg');
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bmw_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .bmw_item {
+        text-align: center;
+    }
+    .bmw_item img {
+        height: 100%;
+        width: 100%;
+    }
+    .mclaren_container {
+        display: flex;
+        background-image: url('./images/blue_mclaren.avif');
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .mclaren_text {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: antiquewhite;
+        font-size: 50px;
+    }
+    .audi_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .audi_item {
+        display: flex;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .audi_image {
+        padding: 5px;
+    }
+    .audi_image > img {
+        height: 100%;
+        width: 100%; 
+    }
+    .audi_text {
+        padding: 5px;
+    }
+    .ferrary {
+        width: 100%;
+        margin: auto;
+    }
+    .ferrary_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .ferrary_heading {
+        display: block;
+        text-align: center;
+        height: 60px;
+    }
+    .ferrary_items {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center; 
+    }
+    .ferrary_items > img {
+        height: 100%;
+        width: 100%; 
+    }
+    .footer_container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer_item {
+        width: 100%;
+        text-align: center;
+    }
+    .footer_item > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* minimal diplay resolution 600px */
+@media only screen and (min-width: 600px){
+    section {
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header {
+        background-image: url('./images/bently.jpg');
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bmw_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .bmw_item {
+        text-align: center;
+    }
+    .bmw_item img {
+        height: 100%;
+        width: 100%;
+    }
+    .mclaren_container {
+        display: flex;
+        background-image: url('./images/blue_mclaren.avif');
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .mclaren_text {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: antiquewhite;
+        font-size: 50px;
+    }
+    .audi_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .audi_item {
+        display: flex;
+        margin-top: 30px;
+    }
+    .revers {
+        flex-direction: row-reverse;
+    }
+    .audi_image {
+        width: 50%;
+        padding: 5px;
+    }
+    .audi_image > img {
+        height: 100%;
+        width: 100%; 
+    }
+    .audi_text {
+        width: 50%;
+        padding: 5px;
+    }
+    .ferrary {
+        width: 100%;
+        margin: auto;
+    }
+    .ferrary_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .ferrary_heading {
+        display: block;
+        text-align: center;
+        height: 60px;
+    }
+    .ferrary_items {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center; 
+    }
+    .ferrary_items > img {
+        height: 100%;
+        width: 100%; 
+    }
+    .footer_container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer_item {
+        width: 100%;
+        text-align: center;
+    }
+    .footer_item > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* tablet display from 768px */
+@media only screen and (min-width: 768px) {
+    section {
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header {
+        background-image: url('./images/bently.jpg');
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .bmw_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .bmw_item {
+        width: 30%;
+        text-align: center;
+    }
+    .bmw_item img {
+        height: 100%;
+        width: 100%;
+    }
+    .mclaren_container {
+        display: flex;
+        background-image: url('./images/blue_mclaren.avif');
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .mclaren_text {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: antiquewhite;
+        font-size: 50px;
+    }
+    .audi_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .audi_item {
+        display: flex;
+        margin-top: 30px;
+    }
+    .audi_image {
+        width: 50%;
+        padding: 5px;
+    }
+    .audi_image > img {
+        height: 100%;
+        width: 100%; 
+    }
+    .audi_text {
+        width: 50%;
+        padding: 5px;
+    }
+    .ferrary {
+        width: 100%;
+        margin: auto;
+    }
+    .ferrary_container {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .ferrary_heading {
+        display: block;
+        text-align: center;
+        height: 60px;
+    }
+    .ferrary_heading > h1 {
+        padding-top: 15px;
+    }
+    .ferrary_items {
+        width: 49%;
+        text-align: center; 
+    }
+    .ferrary_items > img {
+        height: 100%;
+        width: 100%; 
+    }
+    footer {
+        margin-top: 20px;
+    }
+    .footer_container {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .footer_item {
+        width: 24%;
+        text-align: center;
+    }
+    .footer_item > img {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* ekrāniem sākot no 1100px */
+@media only screen and (min-width: 1100px){
+    header {
     background-image: url('./images/bently.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 50vh;
-}
-/* header > img {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
-} */
+}
 section {
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .bmw_container {
     display: flex;
@@ -91,10 +429,8 @@ section {
     height: 60px;
 }
 .ferrary_items {
-    width: 45%;
+    width: 49%;
     justify-content: space-between; 
-    margin-top: auto;
-    margin-bottom: auto;
     text-align: center; 
 }
 .ferrary_items > img {
@@ -110,10 +446,10 @@ section {
     gap: 10px;
 }
 .footer_item {
-    width: 20%;
     text-align: center;
 }
 .footer_item > img {
     width: 100%;
     height: 100%;
+}
 }
